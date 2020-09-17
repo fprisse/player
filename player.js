@@ -8,10 +8,22 @@ const progressBar = document.querySelector('#progress-bar'); // element where pr
 let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
 songIndex = 0;
-songs = ['http://direct.fipradio.fr/live/fip-midfi.mp3', 'http://direct.fipradio.fr/live/fip-webradio1.mp3', 'http://direct.fipradio.fr/live/fip-webradio2.mp3', './assets/music/dontstartnow.mp3']; // object storing paths for audio objects
-thumbnails = ['./assets/images/fip_radio.png', './assets/images/fip_rock.png', './assets/images/fip_jazz.png', './assets/images/dontstartnow.png']; // object storing paths for album covers and backgrounds
-songArtists = ['FIP Stream 1', 'FIP Stream 2', 'FIP Stream 3', 'Dua Lipa']; // object storing track artists
-songTitles = ['Radio', 'Rock', 'Jazz', 'Dont Start Now']; // object storing track titles
+songs = ['http://direct.fipradio.fr/live/fip-midfi.mp3',
+'http://direct.fipradio.fr/live/fip-webradio1.mp3',
+'http://direct.fipradio.fr/live/fip-webradio2.mp3',
+'./assets/music/dontstartnow.mp3']; // object storing paths for audio objects
+thumbnails = ['./assets/images/fip_radio.png',
+'./assets/images/fip_rock.png',
+'./assets/images/fip_jazz.png',
+'./assets/images/dontstartnow.png']; // object storing paths for album covers and backgrounds
+songArtists = ['FIP Stream 1',
+'FIP Stream 2',
+'FIP Stream 3',
+'Dua Lipa']; // object storing track artists
+songTitles = ['Radio',
+'Rock',
+'Jazz',
+'Dont Start Now']; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
 let playing = true;
