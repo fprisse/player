@@ -20,7 +20,7 @@ body {
 /* container for music player */
 .container {
     position: absolute;
-    height: 300pt;
+    height: 280pt;
     width: 250pt;
     margin: auto;
     top: 0;
