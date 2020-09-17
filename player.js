@@ -7,7 +7,7 @@ const songTitle = document.querySelector('.song-title'); // element where track 
 const progressBar = document.querySelector('#progress-bar'); // element where progress bar appears
 let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
-songIndex = 4;
+songIndex = 0;
 songs = ['http://direct.fipradio.fr/live/fip-midfi.mp3',
 'http://direct.fipradio.fr/live/fip-webradio1.mp3',
 'http://direct.fipradio.fr/live/fip-webradio2.mp3',
