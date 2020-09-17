@@ -13,36 +13,24 @@ songs = ['http://icecast.radiofrance.fr/fip-midfi.mp3',
 'http://icecast.radiofrance.fr/fipjazz-midfi.mp3',
 'http://icecast.radiofrance.fr/fipgroove-midfi.mp3',
 'http://icecast.radiofrance.fr/fipworld-midfi.mp3',
-'https://icecast.radiofrance.fr/fipnouveautes-midfi.mp3'
-'https://icecast.radiofrance.fr/fipreggae-midfi.mp3'
-'https://icecast.radiofrance.fr/fipelectro-midfi.mp3'
 './assets/music/dontstartnow.mp3']; // object storing paths for audio objects
 thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_rock.png',
 './assets/images/fip_jazz.png',
 './assets/images/fip_groove.png',
 './assets/images/fip_monde.png',
-'./assets/images/fip_nouveau.png',
-'./assets/images/fip_reggae.png',
-'./assets/images/fip_electro.png',
 './assets/images/dontstartnow.png']; // object storing paths for album covers and backgrounds
 songArtists = ['FIP Stream 1',
 'FIP Stream 2',
 'FIP Stream 3',
 'FIP Stream 4',
 'FIP Stream 5',
-'FIP Stream 6',
-'FIP Stream 7',
-'FIP Stream 8',
 'Dua Lipa']; // object storing track artists
 songTitles = ['Radio',
 'Rock',
 'Jazz',
 'Groove',
 'Monde'
-'Nouveautes'
-'Reggae'
-'Electro'
 'Dont Start Now']; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
@@ -74,7 +62,7 @@ song.addEventListener('ended', function(){
 // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
 function nextSong() {
     songIndex++;
-    if (songIndex > 8) {
+    if (songIndex > 6) {
         songIndex = 0;
     };
     song.src = songs[songIndex];
@@ -92,7 +80,7 @@ function nextSong() {
 function previousSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = 8;
+        songIndex = 6;
     };
     song.src = songs[songIndex];
     thumbnail.src = thumbnails[songIndex];
