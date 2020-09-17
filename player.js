@@ -33,7 +33,6 @@ songArtists = ['FIP Stream 1',
 'FIP Stream 5',
 'FIP Stream 6',
 'FIP Stream 7',
-'FIP Stream 8',
 'Dua Lipa']; // object storing track artists
 songTitles = ['Radio',
 'Rock',
