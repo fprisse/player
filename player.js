@@ -12,21 +12,25 @@ songs = ['http://direct.fipradio.fr/live/fip-midfi.mp3',
 'http://direct.fipradio.fr/live/fip-webradio1.mp3',
 'http://direct.fipradio.fr/live/fip-webradio2.mp3',
 'http://direct.fipradio.fr/live/fip-webradio3.mp3',
+'http://direct.fipradio.fr/live/fip-webradio4.mp3',
 './assets/music/dontstartnow.mp3']; // object storing paths for audio objects
 thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_rock.png',
 './assets/images/fip_jazz.png',
 './assets/images/fip_groove.png',
+'./assets/images/fip_pop.png',
 './assets/images/dontstartnow.png']; // object storing paths for album covers and backgrounds
 songArtists = ['FIP Stream 1',
 'FIP Stream 2',
 'FIP Stream 3',
 'FIP Stream 4',
+'FIP Stream 5',
 'Dua Lipa']; // object storing track artists
 songTitles = ['Radio',
 'Rock',
 'Jazz',
 'Groove',
+'Pop'
 'Dont Start Now']; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
