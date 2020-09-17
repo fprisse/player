@@ -58,7 +58,7 @@ song.addEventListener('ended', function(){
 // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
 function nextSong() {
     songIndex++;
-    if (songIndex > 5) {
+    if (songIndex > 4) {
         songIndex = 0;
     };
     song.src = songs[songIndex];
@@ -76,7 +76,7 @@ function nextSong() {
 function previousSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = 5;
+        songIndex = 4;
     };
     song.src = songs[songIndex];
     thumbnail.src = thumbnails[songIndex];
