@@ -8,21 +8,34 @@ const progressBar = document.querySelector('#progress-bar'); // element where pr
 let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
 songIndex = 0;
-songs = ['http://direct.fipradio.fr/live/fip-midfi.mp3',
+songs =
+['http://direct.fipradio.fr/live/fip-midfi.mp3',
 'http://direct.fipradio.fr/live/fip-webradio1.mp3',
 'http://direct.fipradio.fr/live/fip-webradio2.mp3',
+'http://direct.fipradio.fr/live/fip-webradio3.mp3',
+'http://direct.fipradio.fr/live/fip-webradio4.mp3'
+'http://direct.fipradio.fr/live/fip-webradio5.mp3',
 './assets/music/dontstartnow.mp3']; // object storing paths for audio objects
 thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_rock.png',
 './assets/images/fip_jazz.png',
+'./assets/images/fip_groove.png',
+'./assets/images/fip_pop.png',
+'./assets/images/fip_electro.png'
 './assets/images/dontstartnow.png']; // object storing paths for album covers and backgrounds
 songArtists = ['FIP Stream 1',
 'FIP Stream 2',
 'FIP Stream 3',
+'FIP Stream 4',
+'FIP Stream 5',
+'FIP Stream 6',
 'Dua Lipa']; // object storing track artists
 songTitles = ['Radio',
 'Rock',
 'Jazz',
+'Groove',
+'Pop',
+'Electro',
 'Dont Start Now']; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
@@ -54,7 +67,7 @@ song.addEventListener('ended', function(){
 // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
 function nextSong() {
     songIndex++;
-    if (songIndex > 3) {
+    if (songIndex > 6) {
         songIndex = 0;
     };
     song.src = songs[songIndex];
@@ -72,7 +85,7 @@ function nextSong() {
 function previousSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = 3;
+        songIndex = 6;
     };
     song.src = songs[songIndex];
     thumbnail.src = thumbnails[songIndex];
