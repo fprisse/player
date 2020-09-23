@@ -13,9 +13,6 @@ songs = ['http://icecast.radiofrance.fr/fip-midfi.mp3',
 'http://icecast.radiofrance.fr/fipjazz-midfi.mp3',
 'http://icecast.radiofrance.fr/fipgroove-midfi.mp3',
 'http://icecast.omroep.nl:80/radio1-bb-aac',
-'http://icecast.omroep.nl:80/radio2-bb-aac',
-'http://icecast.omroep.nl:80/radio3-bb-aac',
-'http://icecast.omroep.nl:80/radio4-bb-aac',
 './assets/music/firstday.mp3'
 './assets/music/dontstartnow.mp3']; // object storing paths for audio objects
 thumbnails = ['./assets/images/fip_radio.png',
@@ -23,9 +20,6 @@ thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_jazz.png',
 './assets/images/fip_groove.png',
 './assets/images/radio1.png',
-'./assets/images/radio2.png',
-'./assets/images/radio3.png'
-'./assets/images/radio4.png',
 './assets/images/amlife.png'
 './assets/images/dontstartnow.png']; // object storing paths for album covers and backgrounds
 songArtists = ['FIP Stream 1',
@@ -33,9 +27,6 @@ songArtists = ['FIP Stream 1',
 'FIP Stream 3',
 'FIP Stream 4',
 'NPO-1',
-'NPO-2',
-'NPO-3',
-'NPO-4',
 'WBEZ'
 'Dua Lipa']; // object storing track artists
 songTitles = ['Radio',
@@ -43,9 +34,6 @@ songTitles = ['Radio',
 'Jazz',
 'Groove',
 'Radio 1',
-'Radio 2',
-'Radio 3',
-'Radio 4',
 'This American Life'
 'Dont Start Now']; // object storing track titles
 
@@ -78,7 +66,7 @@ song.addEventListener('ended', function(){
 // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
 function nextSong() {
     songIndex++;
-    if (songIndex > 9) {
+    if (songIndex > 6) {
         songIndex = 0;
     };
     song.src = songs[songIndex];
@@ -96,7 +84,7 @@ function nextSong() {
 function previousSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = 9;
+        songIndex = 6;
     };
     song.src = songs[songIndex];
     thumbnail.src = thumbnails[songIndex];
