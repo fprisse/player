@@ -32,10 +32,10 @@ songArtists = ['FIP Stream 1',
 'FIP Stream 2',
 'FIP Stream 3',
 'FIP Stream 4',
-'NPO',
-'NPO',
-'NPO',
-'NPO',
+'NPO-1',
+'NPO-2',
+'NPO-3',
+'NPO-4',
 'WBEZ'
 'Dua Lipa']; // object storing track artists
 songTitles = ['Radio',
@@ -78,7 +78,7 @@ song.addEventListener('ended', function(){
 // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
 function nextSong() {
     songIndex++;
-    if (songIndex > 6) {
+    if (songIndex > 9) {
         songIndex = 0;
     };
     song.src = songs[songIndex];
@@ -96,7 +96,7 @@ function nextSong() {
 function previousSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = 6;
+        songIndex = 9;
     };
     song.src = songs[songIndex];
     thumbnail.src = thumbnails[songIndex];
