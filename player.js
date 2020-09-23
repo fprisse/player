@@ -22,7 +22,6 @@ thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_rock.png',
 './assets/images/fip_jazz.png',
 './assets/images/fip_groove.png',
-'./assets/images/dontstartnow.png',
 './assets/images/radio1.png',
 './assets/images/radio2.png',
 './assets/images/radio3.png'
