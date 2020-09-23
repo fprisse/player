@@ -12,22 +12,26 @@ songs = ['http://icecast.radiofrance.fr/fip-midfi.mp3',
 'http://icecast.radiofrance.fr/fiprock-midfi.mp3',
 'http://icecast.radiofrance.fr/fipjazz-midfi.mp3',
 'http://icecast.radiofrance.fr/fipgroove-midfi.mp3',
-'./assets/music/dontstartnow.mp3']; // object storing paths for audio objects
+'./assets/music/dontstartnow.mp3',
+'http://icecast.omroep.nl:80/radio1-bb-aac']; // object storing paths for audio objects
 thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_rock.png',
 './assets/images/fip_jazz.png',
 './assets/images/fip_groove.png',
-'./assets/images/dontstartnow.png']; // object storing paths for album covers and backgrounds
+'./assets/images/dontstartnow.png',
+'./assets/images/radio1.png']; // object storing paths for album covers and backgrounds
 songArtists = ['FIP Stream 1',
 'FIP Stream 2',
 'FIP Stream 3',
 'FIP Stream 4',
-'Dua Lipa']; // object storing track artists
+'Dua Lipa',
+'NPO']; // object storing track artists
 songTitles = ['Radio',
 'Rock',
 'Jazz',
 'Groove',
-'Dont Start Now']; // object storing track titles
+'Dont Start Now',
+'Radio 1']; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
 let playing = true;
