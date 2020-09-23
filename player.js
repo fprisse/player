@@ -13,29 +13,25 @@ songs = ['http://icecast.radiofrance.fr/fip-midfi.mp3',
 'http://icecast.radiofrance.fr/fipjazz-midfi.mp3',
 'http://icecast.radiofrance.fr/fipgroove-midfi.mp3',
 'http://icecast.omroep.nl:80/radio1-bb-aac',
-'./assets/music/firstday.mp3'
-'./assets/music/dontstartnow.mp3']; // object storing paths for audio objects
+'./assets/music/firstday.mp3']; // object storing paths for audio objects
 thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_rock.png',
 './assets/images/fip_jazz.png',
 './assets/images/fip_groove.png',
 './assets/images/radio1.png',
-'./assets/images/amlife.png'
-'./assets/images/dontstartnow.png']; // object storing paths for album covers and backgrounds
+'./assets/images/amlife.png']; // object storing paths for album covers and backgrounds
 songArtists = ['FIP Stream 1',
 'FIP Stream 2',
 'FIP Stream 3',
 'FIP Stream 4',
 'NPO-1',
-'WBEZ'
-'Dua Lipa']; // object storing track artists
+'WBEZ']; // object storing track artists
 songTitles = ['Radio',
 'Rock',
 'Jazz',
 'Groove',
 'Radio 1',
-'This American Life'
-'Dont Start Now']; // object storing track titles
+'This American Life']; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
 let playing = true;
@@ -66,7 +62,7 @@ song.addEventListener('ended', function(){
 // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
 function nextSong() {
     songIndex++;
-    if (songIndex > 6) {
+    if (songIndex > 5) {
         songIndex = 0;
     };
     song.src = songs[songIndex];
@@ -84,7 +80,7 @@ function nextSong() {
 function previousSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = 6;
+        songIndex = 5;
     };
     song.src = songs[songIndex];
     thumbnail.src = thumbnails[songIndex];
