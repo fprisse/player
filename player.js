@@ -24,8 +24,8 @@ songArtists = ['FIP Stream 1',
 'FIP Stream 2',
 'FIP Stream 3',
 'FIP Stream 4',
-'Xander Hubrecht'
-'Xander Hubrecht']; // object storing track artists
+'Xander Hubrecht 1'
+'Xander Hubrecht 2']; // object storing track artists
 songTitles = ['Radio',
 'Rock',
 'Jazz',
