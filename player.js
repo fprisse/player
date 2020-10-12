@@ -30,8 +30,8 @@ songTitles = ['Radio',
 'Rock',
 'Jazz',
 'Groove',
-'Tears in my eyes',
-'the Sailor']; // object storing track titles
+'Tears',
+'Sailor']; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
 let playing = true;
