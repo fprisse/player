@@ -19,13 +19,13 @@ thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_jazz.png',
 './assets/images/fip_groove.png',
 './assets/images/xander.png',
-'./assets/images/xander.png']; // object storing paths for album covers and backgrounds
+'./assets/images/xander1.png']; // object storing paths for album covers and backgrounds
 songArtists = ['FIP Stream 1',
 'FIP Stream 2',
 'FIP Stream 3',
 'FIP Stream 4',
-'Xander Hubrecht 1'
-'Xander Hubrecht 2']; // object storing track artists
+'Xander 1'
+'Xander 2']; // object storing track artists
 songTitles = ['Radio',
 'Rock',
 'Jazz',
