@@ -13,7 +13,7 @@ songs = ['http://icecast.radiofrance.fr/fip-midfi.mp3',
 'http://icecast.radiofrance.fr/fipjazz-midfi.mp3',
 'http://icecast.radiofrance.fr/fipgroove-midfi.mp3',
 'http://classicalking.streamguys1.com/king-fm-mp3',
-'http://classicalking.streamguys1.com/second-inversion-aac']; // object storing paths for audio objects
+'http://classicalking.streamguys1.com/evergreen-mp3-96k']; // object storing paths for audio objects
 thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_rock.png',
 './assets/images/fip_jazz.png',
@@ -31,7 +31,7 @@ songTitles = ['Radio',
 'Jazz',
 'Groove',
 'Classic FM 98.1',
-'Second Inversion']; // object storing track titles
+'Evergreen']; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
 let playing = true;
