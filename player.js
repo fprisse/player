@@ -12,26 +12,26 @@ songs = ['http://icecast.radiofrance.fr/fip-midfi.mp3',
 'http://icecast.radiofrance.fr/fiprock-midfi.mp3',
 'http://icecast.radiofrance.fr/fipjazz-midfi.mp3',
 'http://icecast.radiofrance.fr/fipgroove-midfi.mp3',
-'./assets/music/tears.mp3',
-'./assets/music/sailor.mp3']; // object storing paths for audio objects
+'http://classicalking.streamguys1.com/king-fm-mp3',
+'http://classicalking.streamguys1.com/second-inversion-aac']; // object storing paths for audio objects
 thumbnails = ['./assets/images/fip_radio.png',
 './assets/images/fip_rock.png',
 './assets/images/fip_jazz.png',
 './assets/images/fip_groove.png',
-'./assets/images/xander.png',
-'./assets/images/xander.png']; // object storing paths for album covers and backgrounds
+'./assets/images/king1.png',
+'./assets/images/king2.png']; // object storing paths for album covers and backgrounds
 songArtists = ['FIP Stream 1',
 'FIP Stream 2',
 'FIP Stream 3',
 'FIP Stream 4',
-'Xander Hubrecht',
-'Xander Hubrecht']; // object storing track artists
+'King Seatle',
+'King Seatle']; // object storing track artists
 songTitles = ['Radio',
 'Rock',
 'Jazz',
 'Groove',
-'Tears in my eyes',
-'The Sailor']; // object storing track titles
+'Classic FM 98.1',
+'Second Inversion']; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
 let playing = true;
